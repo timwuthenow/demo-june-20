@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_6DB03DD4-5B06-4862-95B1-EAD323DD8591" id="_4320FE8F-1009-40A7-AA28-BB4341D31690" name="DMN_CB98ACFC-A433-41DA-9171-94AE04A1FAED" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0">
+  <inputData name="Customer" id="_B0077220-A4B5-475D-A27F-D9B68CC3376C">
+    <variable name="Customer" id="_4FFD8EFE-CF60-43C2-A750-EA252EC0B817" />
+  </inputData>
+  <decision name="Discount" id="_06BA702D-7CEE-4798-92A2-B4D8AA04E75B">
+    <variable id="_13563AAD-B05C-4A5B-BEC9-DB0383DABA4E" name="Discount" />
+    <informationRequirement id="_1F8C48D9-43CF-478B-9B7C-FC0E9FCFCC68">
+      <requiredInput href="#_B0077220-A4B5-475D-A27F-D9B68CC3376C" />
+    </informationRequirement>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_67F58E36-0BF7-422E-B36A-6BCF043994BE" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths />
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_0383367F-68AD-4BF1-896D-1B8AA683417F" dmnElementRef="_B0077220-A4B5-475D-A27F-D9B68CC3376C" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="340" y="180" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_FCE816C4-E3A2-407A-B82D-B23533128455" dmnElementRef="_06BA702D-7CEE-4798-92A2-B4D8AA04E75B" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="700" y="380" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_806A09C1-0838-4C39-B24A-9AAB5D61A22E-AUTO-TARGET" dmnElementRef="_1F8C48D9-43CF-478B-9B7C-FC0E9FCFCC68" sourceElement="_0383367F-68AD-4BF1-896D-1B8AA683417F" targetElement="_FCE816C4-E3A2-407A-B82D-B23533128455">
+        <di:waypoint x="420" y="220" />
+        <di:waypoint x="780" y="420" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
